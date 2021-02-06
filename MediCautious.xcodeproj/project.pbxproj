@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4087678025CE274E004D45DD /* MediCautiousApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4087677F25CE274E004D45DD /* MediCautiousApp.swift */; };
+		4087678225CE274E004D45DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4087678125CE274E004D45DD /* ContentView.swift */; };
+		4087678425CE2751004D45DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4087678325CE2751004D45DD /* Assets.xcassets */; };
+		4087678725CE2751004D45DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4087678625CE2751004D45DD /* Preview Assets.xcassets */; };
+		4087678925CE2751004D45DD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4087678825CE2751004D45DD /* Persistence.swift */; };
+		4087678C25CE2751004D45DD /* MediCautious.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4087678A25CE2751004D45DD /* MediCautious.xcdatamodeld */; };
+		4087679725CE2752004D45DD /* MediCautiousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4087679625CE2752004D45DD /* MediCautiousTests.swift */; };
+		408767A225CE2752004D45DD /* MediCautiousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408767A125CE2752004D45DD /* MediCautiousUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4087679325CE2752004D45DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4087677425CE274E004D45DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4087677B25CE274E004D45DD;
+			remoteInfo = MediCautious;
+		};
+		4087679E25CE2752004D45DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4087677425CE274E004D45DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4087677B25CE274E004D45DD;
+			remoteInfo = MediCautious;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4087677C25CE274E004D45DD /* MediCautious.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediCautious.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4087677F25CE274E004D45DD /* MediCautiousApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediCautiousApp.swift; sourceTree = "<group>"; };
+		4087678125CE274E004D45DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4087678325CE2751004D45DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4087678625CE2751004D45DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4087678825CE2751004D45DD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4087678B25CE2751004D45DD /* MediCautious.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MediCautious.xcdatamodel; sourceTree = "<group>"; };
+		4087678D25CE2751004D45DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4087679225CE2752004D45DD /* MediCautiousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediCautiousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4087679625CE2752004D45DD /* MediCautiousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediCautiousTests.swift; sourceTree = "<group>"; };
+		4087679825CE2752004D45DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4087679D25CE2752004D45DD /* MediCautiousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediCautiousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		408767A125CE2752004D45DD /* MediCautiousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediCautiousUITests.swift; sourceTree = "<group>"; };
+		408767A325CE2752004D45DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4087677925CE274E004D45DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087678F25CE2752004D45DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087679A25CE2752004D45DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4087677325CE274E004D45DD = {
+			isa = PBXGroup;
+			children = (
+				4087677E25CE274E004D45DD /* MediCautious */,
+				4087679525CE2752004D45DD /* MediCautiousTests */,
+				408767A025CE2752004D45DD /* MediCautiousUITests */,
+				4087677D25CE274E004D45DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4087677D25CE274E004D45DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4087677C25CE274E004D45DD /* MediCautious.app */,
+				4087679225CE2752004D45DD /* MediCautiousTests.xctest */,
+				4087679D25CE2752004D45DD /* MediCautiousUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4087677E25CE274E004D45DD /* MediCautious */ = {
+			isa = PBXGroup;
+			children = (
+				4087677F25CE274E004D45DD /* MediCautiousApp.swift */,
+				4087678125CE274E004D45DD /* ContentView.swift */,
+				4087678325CE2751004D45DD /* Assets.xcassets */,
+				4087678825CE2751004D45DD /* Persistence.swift */,
+				4087678D25CE2751004D45DD /* Info.plist */,
+				4087678A25CE2751004D45DD /* MediCautious.xcdatamodeld */,
+				4087678525CE2751004D45DD /* Preview Content */,
+			);
+			path = MediCautious;
+			sourceTree = "<group>";
+		};
+		4087678525CE2751004D45DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4087678625CE2751004D45DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4087679525CE2752004D45DD /* MediCautiousTests */ = {
+			isa = PBXGroup;
+			children = (
+				4087679625CE2752004D45DD /* MediCautiousTests.swift */,
+				4087679825CE2752004D45DD /* Info.plist */,
+			);
+			path = MediCautiousTests;
+			sourceTree = "<group>";
+		};
+		408767A025CE2752004D45DD /* MediCautiousUITests */ = {
+			isa = PBXGroup;
+			children = (
+				408767A125CE2752004D45DD /* MediCautiousUITests.swift */,
+				408767A325CE2752004D45DD /* Info.plist */,
+			);
+			path = MediCautiousUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4087677B25CE274E004D45DD /* MediCautious */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408767A625CE2752004D45DD /* Build configuration list for PBXNativeTarget "MediCautious" */;
+			buildPhases = (
+				4087677825CE274E004D45DD /* Sources */,
+				4087677925CE274E004D45DD /* Frameworks */,
+				4087677A25CE274E004D45DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediCautious;
+			productName = MediCautious;
+			productReference = 4087677C25CE274E004D45DD /* MediCautious.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4087679125CE2752004D45DD /* MediCautiousTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408767A925CE2752004D45DD /* Build configuration list for PBXNativeTarget "MediCautiousTests" */;
+			buildPhases = (
+				4087678E25CE2752004D45DD /* Sources */,
+				4087678F25CE2752004D45DD /* Frameworks */,
+				4087679025CE2752004D45DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4087679425CE2752004D45DD /* PBXTargetDependency */,
+			);
+			name = MediCautiousTests;
+			productName = MediCautiousTests;
+			productReference = 4087679225CE2752004D45DD /* MediCautiousTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4087679C25CE2752004D45DD /* MediCautiousUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408767AC25CE2752004D45DD /* Build configuration list for PBXNativeTarget "MediCautiousUITests" */;
+			buildPhases = (
+				4087679925CE2752004D45DD /* Sources */,
+				4087679A25CE2752004D45DD /* Frameworks */,
+				4087679B25CE2752004D45DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4087679F25CE2752004D45DD /* PBXTargetDependency */,
+			);
+			name = MediCautiousUITests;
+			productName = MediCautiousUITests;
+			productReference = 4087679D25CE2752004D45DD /* MediCautiousUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4087677425CE274E004D45DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4087677B25CE274E004D45DD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4087679125CE2752004D45DD = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4087677B25CE274E004D45DD;
+					};
+					4087679C25CE2752004D45DD = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4087677B25CE274E004D45DD;
+					};
+				};
+			};
+			buildConfigurationList = 4087677725CE274E004D45DD /* Build configuration list for PBXProject "MediCautious" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4087677325CE274E004D45DD;
+			productRefGroup = 4087677D25CE274E004D45DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4087677B25CE274E004D45DD /* MediCautious */,
+				4087679125CE2752004D45DD /* MediCautiousTests */,
+				4087679C25CE2752004D45DD /* MediCautiousUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4087677A25CE274E004D45DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4087678725CE2751004D45DD /* Preview Assets.xcassets in Resources */,
+				4087678425CE2751004D45DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087679025CE2752004D45DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087679B25CE2752004D45DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4087677825CE274E004D45DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4087678925CE2751004D45DD /* Persistence.swift in Sources */,
+				4087678C25CE2751004D45DD /* MediCautious.xcdatamodeld in Sources */,
+				4087678225CE274E004D45DD /* ContentView.swift in Sources */,
+				4087678025CE274E004D45DD /* MediCautiousApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087678E25CE2752004D45DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4087679725CE2752004D45DD /* MediCautiousTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4087679925CE2752004D45DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408767A225CE2752004D45DD /* MediCautiousUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4087679425CE2752004D45DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4087677B25CE274E004D45DD /* MediCautious */;
+			targetProxy = 4087679325CE2752004D45DD /* PBXContainerItemProxy */;
+		};
+		4087679F25CE2752004D45DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4087677B25CE274E004D45DD /* MediCautious */;
+			targetProxy = 4087679E25CE2752004D45DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		408767A425CE2752004D45DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		408767A525CE2752004D45DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		408767A725CE2752004D45DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MediCautious/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MediCautious/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Satvik.MediCautious;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		408767A825CE2752004D45DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MediCautious/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MediCautious/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Satvik.MediCautious;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		408767AA25CE2752004D45DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MediCautiousTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Satvik.MediCautiousTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediCautious.app/MediCautious";
+			};
+			name = Debug;
+		};
+		408767AB25CE2752004D45DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MediCautiousTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Satvik.MediCautiousTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MediCautious.app/MediCautious";
+			};
+			name = Release;
+		};
+		408767AD25CE2752004D45DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MediCautiousUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Satvik.MediCautiousUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediCautious;
+			};
+			name = Debug;
+		};
+		408767AE25CE2752004D45DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MediCautiousUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Satvik.MediCautiousUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MediCautious;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4087677725CE274E004D45DD /* Build configuration list for PBXProject "MediCautious" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408767A425CE2752004D45DD /* Debug */,
+				408767A525CE2752004D45DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		408767A625CE2752004D45DD /* Build configuration list for PBXNativeTarget "MediCautious" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408767A725CE2752004D45DD /* Debug */,
+				408767A825CE2752004D45DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		408767A925CE2752004D45DD /* Build configuration list for PBXNativeTarget "MediCautiousTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408767AA25CE2752004D45DD /* Debug */,
+				408767AB25CE2752004D45DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		408767AC25CE2752004D45DD /* Build configuration list for PBXNativeTarget "MediCautiousUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408767AD25CE2752004D45DD /* Debug */,
+				408767AE25CE2752004D45DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4087678A25CE2751004D45DD /* MediCautious.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4087678B25CE2751004D45DD /* MediCautious.xcdatamodel */,
+			);
+			currentVersion = 4087678B25CE2751004D45DD /* MediCautious.xcdatamodel */;
+			path = MediCautious.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4087677425CE274E004D45DD /* Project object */;
+}
