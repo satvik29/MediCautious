@@ -12,6 +12,7 @@ struct SearchView: View {
     @State var searchText = ""
     @State var isSearching = false
     @State var reactions = [ReactionData]()
+    @State var tweets = [Tweet]()
     @ObservedObject var networkManager = NetworkManager()
     
     func numReactions() -> Int {
@@ -23,6 +24,42 @@ struct SearchView: View {
         
         return num
     }
+    
+    func numTweets() -> Int {
+        return tweets.count
+    }
+    
+    func numPositiveTweets() -> Int {
+        var pos_count = 0
+        for tweet in tweets {
+            if (tweet.sentiment == "positive") {
+                pos_count += 1
+            }
+        }
+        
+        return pos_count
+    }
+    func numNegativeTweets() -> Int {
+        var neg_count = 0
+        for tweet in tweets {
+            if (tweet.sentiment == "negative") {
+                neg_count += 1
+            }
+        }
+        
+        return neg_count
+    }
+    func numNeutralTweets() -> Int {
+        var neu_count = 0
+        for tweet in tweets {
+            if (tweet.sentiment == "neutral") {
+                neu_count += 1
+            }
+        }
+        
+        return neu_count
+    }
+    
 
     var body: some View {
         NavigationView {
@@ -39,6 +76,7 @@ struct SearchView: View {
                     .onTapGesture(perform: {
                         isSearching = true
                         reactions = []
+                        tweets = []
                     })
                     .overlay(
                         HStack {
@@ -49,6 +87,7 @@ struct SearchView: View {
                                 searchText = ""
                                 networkManager.resetReactions()
                                 reactions = []
+                                tweets = []
                             }, label: {
                                 Image(systemName: "xmark.circle.fill")
                                     .padding(.vertical)
@@ -62,6 +101,7 @@ struct SearchView: View {
                     if isSearching {
                         Button(action: {
                             reactions = networkManager.getReactions().results
+                            tweets = networkManager.getTweets().results
                             isSearching = false
                             searchText = ""
                         }, label: {
@@ -75,16 +115,16 @@ struct SearchView: View {
                 }
 
                 VStack {
-                    NavigationLink(destination: EmptyView()) {
-                        Text("Confidence Score")
+                    NavigationLink(destination: ConfidenceScoreView(pos_count: numPositiveTweets(), neg_count: numNegativeTweets(), neu_count: numNeutralTweets(), tot_count: numTweets(), num_reactions: numReactions())) {
+                        Text("Confidence Report")
                     }
                     
                     NavigationLink(destination: FDAreportView(list: ReactionList(results: reactions))) {
                         Text("Number of FDA reports: \(numReactions())")
                     }
                     
-                    NavigationLink(destination: EmptyView()) {
-                        Text("Number of social media reports: 0")
+                    NavigationLink(destination: SocialMediaReportView(list: Tweets(results: tweets))) {
+                        Text("Number of social media reports: \(numTweets())")
                     }
                 }
             }
@@ -93,7 +133,7 @@ struct SearchView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
             SearchView()
         }

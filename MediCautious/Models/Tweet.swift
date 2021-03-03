@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Tweets: Decodable {
-    let positive: [String]
-    let negative: [String]
-    let neutral: [String]
+struct Tweet: Decodable, Identifiable {
+    let id = UUID()
+    let text: String
+    let sentiment: String
 }

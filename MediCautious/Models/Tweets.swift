@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Tweets: Decodable {
+    let results: [Tweet]
+}
