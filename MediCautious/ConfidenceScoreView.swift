@@ -28,14 +28,40 @@ struct ConfidenceScoreView: View {
     }
     
     var body: some View {
-        VStack {
-            Text("Percentage of positive tweets: \(Double(100 * (Double(pos_count) / Double(tot_count))))")
-            Text("Percentage of negative tweets: \(Double(100 * (Double(neg_count) / Double(tot_count))))")
-            Text("Percentage of neutral tweets: \(Double(100 * (Double(neu_count) / Double(tot_count))))")
-            Text("Number of adverse reaction reports: \(num_reactions)")
-            Text("Confidence score: \(calculateConfidenceScore())")
+        ZStack {
+            Color.purple.opacity(0.3).ignoresSafeArea()
+            
+            VStack {
+                Text("Percentage of positive tweets: \(Double(100 * (Double(pos_count) / Double(tot_count))))")
+                    .fontWeight(.semibold)
+                    .font(.body)
+                    .padding()
+                Divider()
+                Text("Percentage of negative tweets: \(Double(100 * (Double(neg_count) / Double(tot_count))))")
+                    .fontWeight(.semibold)
+                    .font(.body)
+                    .padding()
+                Divider()
+                Text("Percentage of neutral tweets: \(Double(100 * (Double(neu_count) / Double(tot_count))))")
+                    .fontWeight(.semibold)
+                    .font(.body)
+                    .padding()
+                Divider()
+                Text("Number of adverse reaction reports: \(num_reactions)")
+                    .fontWeight(.semibold)
+                    .font(.body)
+                    .padding()
+                Divider()
+                Text("Confidence score: \(calculateConfidenceScore())")
+                    .fontWeight(.semibold)
+                    .font(.body)
+                    .padding()
+            }
+            .navigationBarTitle(Text("Confidence Report"), displayMode: .inline)
         }
+        
     }
+    
 }
 
 struct ConfidenceScoreView_Previews: PreviewProvider {

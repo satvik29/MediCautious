@@ -64,6 +64,7 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             ScrollView {
+                Spacer()
                 HStack {
                     HStack {
                         TextField("Enter drug", text: $networkManager.searchText)
@@ -113,22 +114,67 @@ struct SearchView: View {
                         .animation(.spring())
                     }
                 }
-
+                
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                
                 VStack {
                     NavigationLink(destination: ConfidenceScoreView(pos_count: numPositiveTweets(), neg_count: numNegativeTweets(), neu_count: numNeutralTweets(), tot_count: numTweets(), num_reactions: numReactions())) {
                         Text("Confidence Report")
+                            .font(.system(size: 25))
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
                     }
+                    .frame(maxWidth: 250, minHeight: 50)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(20)
+                    .shadow(radius: 20)
+                    
+                    Spacer()
                     
                     NavigationLink(destination: FDAreportView(list: ReactionList(results: reactions))) {
                         Text("Number of FDA reports: \(numReactions())")
+                            .font(.system(size: 25))
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
                     }
+                    .frame(maxWidth: 250, minHeight: 40)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(20)
+                    .shadow(radius: 20)
+                    
+                    Spacer()
                     
                     NavigationLink(destination: SocialMediaReportView(list: Tweets(results: tweets))) {
                         Text("Number of social media reports: \(numTweets())")
+                            .font(.system(size: 25))
+                            .fontWeight(.semibold)
+                            .foregroundColor(.black)
                     }
+                    .frame(maxWidth: 250)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(20)
+                    .shadow(radius: 20)
                 }
             }
-            .navigationTitle("MediCautious")
+//            .navigationTitle("MediCautious")
+            .navigationBarTitle(Text("MediCautious"), displayMode: .inline)
+            .navigationBarItems(trailing:
+                                    Button( action: {
+                                        print("Hello")
+                                    }) {
+                                        Image("Logo")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 34, height: 34)
+                                    }
+            )
+            .background(Color.purple.opacity(0.3))
         }
     }
 }

@@ -17,9 +17,15 @@ struct FDAreportView: View {
             ForEach(list.results) { reaction in
                 HStack {
                     Text("\(reaction.count) reports of \(reaction.term)")
+                        .fontWeight(.semibold)
+                        .font(.body)
+                        .padding()
                 }
+                Divider()
             }
         }
+        .navigationBarTitle(Text("FDA Reports"), displayMode: .inline)
+        .background(Color.purple.opacity(0.3))
     }
 }
 

@@ -17,9 +17,18 @@ struct SocialMediaReportView: View {
             ForEach(list.results) { tweet in
                 HStack {
                     Text("\(tweet.text)")
+                        .fontWeight(.semibold)
+                        .font(.body)
                 }
+                .padding()
+//                .border(Color.black)
+                .frame(maxHeight: .infinity)
+                
+                Divider()
             }
         }
+        .navigationBarTitle(Text("Recent Tweets"), displayMode: .inline)
+        .background(Color.purple.opacity(0.3))
     }
 }
 
